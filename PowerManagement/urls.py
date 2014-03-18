@@ -10,4 +10,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'PowerManagement.views.home', name='home'),
+    url(r'^switch/', include('Switch.urls')),
 )
